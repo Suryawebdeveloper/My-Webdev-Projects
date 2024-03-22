@@ -5,7 +5,103 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Design this Grid</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+header{
+  padding: 20px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px 20px;
+}
+.main-content{
+  border: 1px solid black;
+  margin-top: 60px;
+  height: 65vh;
+  display: grid;
+  grid-template-areas: "a" "b" "c" "d" "e" "f";
+  justify-content: center;
+  gap: 30px;
+}
+.item-1{
+  border: 1px solid black;
+  grid-area: a;
+  width: 90vw;
+  background-color: #f7f7f7;
+  display: grid;
+  grid-template-areas: "a" "b c";
+    justify-items: center;
+}
+.item-1 div{
+  grid-area: a;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: aqua;
+  margin: 15px 0;
+  
+}
+.button-1{
+  grid-area: b;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #24f2f2;
+  margin: 15px 0;
+  align-self: start;
+  width: 200px;
+}
+
+.button-2{
+  grid-area: c;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #4aff4a;
+  margin: 15px 0;
+  width: 100px;
+}
+.item-1 span{
+  grid-row: 1/3;
+  border: 1px solid black;
+  align-self: center;
+}
+
+.item-2{
+  grid-area: b;
+  width: 90vw;
+  background-color: #f7f7f7;
+}
+.item-3{
+  grid-area: c;
+  width: 90vw;
+  background-color: #f7f7f7;
+}
+.item-4{
+  grid-area: d;
+  width: 90vw;
+  background-color: #f7f7f7;
+}
+.item-5{
+  grid-area: e;
+  width: 90vw;
+  background-color: #f7f7f7;
+}
+.item-6{
+  grid-area: f;
+  width: 90vw;
+  background-color: #f7f7f7;
+}
+  </style>
 </head>
 
 <body>
